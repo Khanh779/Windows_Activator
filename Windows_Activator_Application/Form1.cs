@@ -117,7 +117,13 @@ namespace Windows_Activator_Application
         {
             if(e.Button== MouseButtons.Left)
             {
-                backgroundWorker1.RunWorkerAsync();
+               if(MessageBox.Show("Do you want to activate Windows?", ProductName + " - Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    if (!backgroundWorker1.IsBusy)
+                    {
+                        backgroundWorker1.RunWorkerAsync();
+                    }
+               }
             }    
         }
     }
