@@ -21,12 +21,12 @@
 | Core          |   ➖        | ✅           |  ➖          |
 | Core N        |  ➖         | ✅           |  ➖          |
 | Core Single Language | ➖  | ✅           |  ➖          |
+| Professional  |    ✅       |   ➖          | ✅          |
 | Professional N|        ➖   | ✅           |  ➖          |
 | Professional WMC |   ➖   | ✅           |     ➖       |
 | Enterprise    |      ➖     | ✅           |   ➖         |
 | Enterprise N  |     ➖      | ✅           |   ➖         |
 | Home          |     ➖      |  ➖           | ✅          |
-| Professional  |    ✅       |   ➖          | ✅          |
 | Enterprise    |    ➖       |   ➖          | ✅          |
 | Enterprise LTSB|    ➖      |   ➖          | ✅          |
 | Education     |     ➖      |   ➖          | ✅          |
