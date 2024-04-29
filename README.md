@@ -16,8 +16,8 @@
 
 | Version      | Windows 7 | Windows 8.1 | Windows 10 |
 | --------------| --------- | ----------- | ---------- |
-| Ultimate      | ✅         |  ➖          | ➖           |
-| Home Premium  | ✅         |  ➖         |  ➖          |
+| Ultimate      |✅|➖| ➖           |
+| Home Premium  | ✅ |  ➖         |  ➖          |
 | Core          |   ➖        | ✅           |  ➖          |
 | Core N        |  ➖         | ✅           |  ➖          |
 | Core Single Language | ➖  | ✅           |  ➖          |
