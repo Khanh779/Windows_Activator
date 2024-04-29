@@ -1,0 +1,10 @@
+D:\Data\Tailieu\Projects\C#\WFA\WFA\obj\Debug\WFA.csproj.AssemblyReference.cache
+D:\Data\Tailieu\Projects\C#\WFA\WFA\obj\Debug\WFA.Form1.resources
+D:\Data\Tailieu\Projects\C#\WFA\WFA\obj\Debug\WFA.Properties.Resources.resources
+D:\Data\Tailieu\Projects\C#\WFA\WFA\obj\Debug\WFA.csproj.GenerateResource.cache
+D:\Data\Tailieu\Projects\C#\WFA\WFA\obj\Debug\WFA.csproj.CoreCompileInputs.cache
+D:\Data\Tailieu\Projects\C#\WFA\WFA\bin\Debug\WFA.exe.config
+D:\Data\Tailieu\Projects\C#\WFA\WFA\bin\Debug\WFA.exe
+D:\Data\Tailieu\Projects\C#\WFA\WFA\bin\Debug\WFA.pdb
+D:\Data\Tailieu\Projects\C#\WFA\WFA\obj\Debug\WFA.exe
+D:\Data\Tailieu\Projects\C#\WFA\WFA\obj\Debug\WFA.pdb
