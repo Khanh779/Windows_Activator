@@ -19,7 +19,11 @@ namespace Windows_Activator_Application
 
         public static void Activation_Windows(WindowsVersion windowsVersion)
         {
-            //Windows 10 Home&echo - Windows 10 Professional&echo - Windows 10 Enterprise, Enterprise LTSB&echo - Windows 10 Education
+            // Windows 10 Home
+            // Windows 10 Professional
+            // Windows 10 Enterprise
+            // Windows 10 Enterprise LTSB
+            // Windows 10 Education
             string[] win10_keys = { "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99",
                                     "3KHY7-WNT83-DGQKR-F7HPR-844BM",
                                     "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH",
@@ -34,6 +38,23 @@ namespace Windows_Activator_Application
                                     "WNMTR-4C88C-JK8YV-HQ7T2-76DF9",
                                     "2F77B-TNFGY-69QQF-B8YKP-D69TJ"
                                     };
+
+            // Windows 8 Core
+            // Windows 8 Core Single Language
+            // Windows 8 Professional
+            // Windows 8 Professional N
+            // Windows 8 Professional WMC
+            // Windows 8 Enterprise
+            // Windows 8 Enterprise N
+            // Windows 8.1 Core
+            // Windows 8.1 Core N
+            // Windows 8.1 Core Single Language
+            // Windows 8.1 Professional
+            // Windows 8.1 Professional N
+            // Windows 8.1 Professional WMC
+            // Windows 8.1 Enterprise
+            // Windows 8.1 Enterprise N
+
             string[] win81_keys = { "GNBB8-YVD74-QJHX6-27H4K-8QHDG",
                                     "M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK",
                                     "XCVCF-2NXM9-723PB-MHCB7-2RYQQ",
@@ -48,6 +69,7 @@ namespace Windows_Activator_Application
                                     "JMNMF-RHW7P-DMY6X-RF3DR-X2BQT",
                                     "HMCNV-VVBFX-7HMBH-CTY9B-B4FXY"
             };
+
             string[] win7_keys =
             {
                                     "BCD25-QLO9D-YZSXR-NNNCD-XXZ9Z",   //Windows 7 Ultimate
@@ -57,7 +79,7 @@ namespace Windows_Activator_Application
                                     "GMY2P-RBX7P-TQGX8-C8B9B-BGXFF",
                                     "AXBS6-LR9OV-MEYF5-RMJB9-UCRT2P", //Windows 7 Home Premium
                                     "6JFPB-DMWMM-6J299-3GF8Y-CXP87" // Windows 7 Professional
-            };              
+            };
 
             string[] win_keys = { };
 
@@ -69,7 +91,7 @@ namespace Windows_Activator_Application
                 case WindowsVersion.Windows8_1:
                     win_keys = win81_keys;
                     break;
-                    case WindowsVersion.Windows7:
+                case WindowsVersion.Windows7:
                     win_keys = win7_keys;
                     break;
             }
@@ -78,7 +100,7 @@ namespace Windows_Activator_Application
             for (int i = 0; i < win_keys.Length; i++)
             {
                 connectKeys += $"{win_keys[i]}";
-                if (i < win_keys.Length-1)
+                if (i < win_keys.Length - 1)
                     connectKeys += ",";
             }
             Process_Script("/activate-key:" + connectKeys);
@@ -118,12 +140,12 @@ namespace Windows_Activator_Application
             }
             else if (cmd.Contains("/activate-key:"))
             {
-                foreach(string key in cmd.Replace("/activate-key:", "").Split(','))
+                foreach (string key in cmd.Replace("/activate-key:", "").Split(','))
                 {
                     Process d = CallProcess("csript", "//nologo c:\\windows\\system32\\slmgr.vbs /ipk " + key);
                     d.Start();
                     d.WaitForExit();
-                }    
+                }
                 for (int i = 0; i < KMS_Sevs.Length; i++)
                 {
                     if (Process_KMS(cmd, KMS_Sevs[i]) == 1)
@@ -140,7 +162,7 @@ namespace Windows_Activator_Application
         {
             process.StartInfo.FileName = "cscript";
             process.StartInfo.Arguments = connectCmd(new string[]
-            {   
+            {
                 $"//nologo c:\\windows\\system32\\slmgr.vbs /skms {KMS_Sev} >nul",
                 "//nologo c:\\windows\\system32\\slmgr.vbs /ato"
             });
@@ -173,7 +195,7 @@ namespace Windows_Activator_Application
             process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             process.EnableRaisingEvents = true;
             process.Start();
-       
+
             string result = process.StandardOutput.ReadToEnd();
             if (result.Contains("successfully"))
             {
@@ -183,13 +205,13 @@ namespace Windows_Activator_Application
             {
                 _result = ResultActivation.Fail;
             }
-      
+
             return _result;
         }
 
         public static void AbortAll()
         {
-            if(process!=null)
+            if (process != null)
                 process.Kill();
         }
 
@@ -201,7 +223,7 @@ namespace Windows_Activator_Application
             Windows10
         }
 
-        public enum ResultActivation   :uint
+        public enum ResultActivation : uint
         {
             Unknown,
             Activated,
@@ -241,7 +263,7 @@ namespace Windows_Activator_Application
             var p = CallProcess("systeminfo", "");
             p.Start();
             p.WaitForExit();
-            s = GetResultFromRowOfProcess("OS Name",p);
+            s = GetResultFromRowOfProcess("OS Name", p);
             return s;
         }
 
@@ -254,13 +276,13 @@ namespace Windows_Activator_Application
             {
                 if (line.Contains(row))
                 {
-                    a = line.Replace(row, "").Replace(":","").Trim();
+                    a = line.Replace(row, "").Replace(":", "").Trim();
                     break;
                 }
             }
             return a;
         }
 
-      
+
     }
 }
