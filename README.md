@@ -1,4 +1,4 @@
-# Windows_Activator_Application
+# Windows_Activator
 
 ## About
 - Windows_Activator_Application tool helps activate windows 7, 8.1 and 10.
