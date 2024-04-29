@@ -114,7 +114,6 @@ namespace Windows_Activator_Application
                 process.StartInfo.RedirectStandardError = true;
                 process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                 process.Start();
-                process.WaitForExit();
                 _result = ResultActivation.UnActivated;
             }
             else if (cmd.Contains("/activate-key:"))
@@ -174,7 +173,6 @@ namespace Windows_Activator_Application
             process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             process.EnableRaisingEvents = true;
             process.Start();
-            process.WaitForExit();
        
             string result = process.StandardOutput.ReadToEnd();
             if (result.Contains("successfully"))
@@ -233,7 +231,7 @@ namespace Windows_Activator_Application
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
             process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            process.EnableRaisingEvents = true;
+            //process.EnableRaisingEvents = true;
             return process;
         }
 

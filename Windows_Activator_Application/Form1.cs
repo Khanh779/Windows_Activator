@@ -40,16 +40,17 @@ namespace Windows_Activator_Application
       
            LB_Form_Text.Text = Text;
             var osVersion = Environment.OSVersion;
-           
-            richTextBox1.Text = string.Format(inforWindowsActivationText,OSName, Windows_Version , Version, Is64BitOperatingSystem,
-                   Is64BitProcess, "Checking ...");
+            ActivationStatus = "Checking...";
+            richTextBox1.Text = "Loading...";
             thread = new Thread(new ThreadStart(delegate
             {
+                loadInfomation();
                 richTextBox1.Text = string.Format(inforWindowsActivationText, OSName, Windows_Version, Version, Is64BitOperatingSystem,
-                   Is64BitProcess, ActivationStatus);
+                Is64BitProcess, ActivationStatus);
             }));
             thread.IsBackground= true;
             thread.Start();
+
         }
 
         void loadInfomation()
