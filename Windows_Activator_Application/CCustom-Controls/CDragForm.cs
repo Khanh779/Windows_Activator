@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Windows_Activator_Application.Custom_Controls
+namespace Windows_Activator.Custom_Controls
 {
     [ToolboxItem(true)]
     public partial class CDragForm : Component

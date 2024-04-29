@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Windows_Activator_Application.Custom_Controls.State;
+using Windows_Activator.Custom_Controls.State;
 
-namespace Windows_Activator_Application.Custom_Controls
+namespace Windows_Activator.Custom_Controls
 {
     public class CButton : Control
     {

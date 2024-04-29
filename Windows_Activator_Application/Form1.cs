@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Windows_Activator_Application.Process_Windows;
+using static Windows_Activator.Process_Windows;
 
-namespace Windows_Activator_Application
+namespace Windows_Activator
 {
     public partial class Form1 : Form
     {

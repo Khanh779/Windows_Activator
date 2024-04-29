@@ -1,4 +1,4 @@
-﻿namespace Windows_Activator_Application
+﻿namespace Windows_Activator
 {
     partial class Form1
     {
@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.PN_Title = new System.Windows.Forms.Panel();
-            this.cButton2 = new Windows_Activator_Application.Custom_Controls.CButton();
-            this.cButton1 = new Windows_Activator_Application.Custom_Controls.CButton();
+            this.cButton2 = new Windows_Activator.Custom_Controls.CButton();
+            this.cButton1 = new Windows_Activator.Custom_Controls.CButton();
             this.LB_Form_Text = new System.Windows.Forms.Label();
             this.PB_Icon = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cButton4 = new Windows_Activator_Application.Custom_Controls.CButton();
-            this.cButton3 = new Windows_Activator_Application.Custom_Controls.CButton();
+            this.cButton4 = new Windows_Activator.Custom_Controls.CButton();
+            this.cButton3 = new Windows_Activator.Custom_Controls.CButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.cDragForm1 = new Windows_Activator_Application.Custom_Controls.CDragForm();
-            this.cDragForm2 = new Windows_Activator_Application.Custom_Controls.CDragForm();
-            this.cDragForm3 = new Windows_Activator_Application.Custom_Controls.CDragForm();
+            this.cDragForm1 = new Windows_Activator.Custom_Controls.CDragForm();
+            this.cDragForm2 = new Windows_Activator.Custom_Controls.CDragForm();
+            this.cDragForm3 = new Windows_Activator.Custom_Controls.CDragForm();
             this.PN_Title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Icon)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();

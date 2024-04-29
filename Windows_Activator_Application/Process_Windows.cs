@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Windows_Activator_Application
+namespace Windows_Activator
 {
     public partial class Process_Windows
     {

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{611D8FF6-8832-47F3-AFEC-A6E8961F2B70}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Windows_Activator_Application</RootNamespace>
-    <AssemblyName>Windows_Activator_Application</AssemblyName>
+    <RootNamespace>Windows_Activator</RootNamespace>
+    <AssemblyName>Windows_Activator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

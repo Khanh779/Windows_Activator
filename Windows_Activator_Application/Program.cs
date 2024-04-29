@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Windows_Activator_Application
+namespace Windows_Activator
 {
     internal static class Program
     {
