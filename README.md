@@ -1,7 +1,7 @@
-# Windows_Activator_Application
+# Windows_Activator
 
 ## About
-- Windows_Activator_Application tool helps activate windows 7, 8.1 and 10.
+- Windows_Activator tool helps activate windows 7, 8.1 and 10.
 
 ## Installation
 - Require .Net Framework 4.7.2 or higher.
@@ -31,3 +31,9 @@
 | Enterprise    |    ➖       |   ➖          | ✅          |
 | Enterprise LTSB|    ➖      |   ➖          | ✅          |
 | Education     |     ➖      |   ➖          | ✅          |
+
+## Images
+![image](https://github.com/Khanh779/Windows_Activator_Application/blob/master/Screen/Screenshot%202024-04-29%20231437.png)
+
+![image](https://github.com/Khanh779/Windows_Activator_Application/blob/master/Screen/Screenshot%202024-04-29%20231552.png)
+
