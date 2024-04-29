@@ -12,13 +12,12 @@
 - Displays activation status.
 - Click the 'Activate' button to activate Windows.
 
-## Versions supported on Windows
+## Versions are supported for activation
 
 | Version      | Windows 7 | Windows 8.1 | Windows 10 |
 | --------------| --------- | ----------- | ---------- |
 | Ultimate      | ✅         |  ➖          | ➖           |
 | Home Premium  | ✅         |  ➖         |  ➖          |
-| Professional  | ✅         |  ➖         |  ➖          |
 | Core          |   ➖        | ✅           |  ➖          |
 | Core N        |  ➖         | ✅           |  ➖          |
 | Core Single Language | ➖  | ✅           |  ➖          |
@@ -27,7 +26,7 @@
 | Enterprise    |      ➖     | ✅           |   ➖         |
 | Enterprise N  |     ➖      | ✅           |   ➖         |
 | Home          |     ➖      |  ➖           | ✅          |
-| Professional  |    ➖       |   ➖          | ✅          |
+| Professional  |    ✅       |   ➖          | ✅          |
 | Enterprise    |    ➖       |   ➖          | ✅          |
 | Enterprise LTSB|    ➖      |   ➖          | ✅          |
 | Education     |     ➖      |   ➖          | ✅          |
